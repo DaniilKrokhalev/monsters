@@ -2,17 +2,18 @@ package com.company;
 
 public class Zombie extends Monster {
     public Zombie(String name) {
-        super();
+        super(name + " the Zombie", 5);
     }
 
     @Override
     public void growl() {
-       System.out.print("Raaaauuughhhh");
+        System.out.print("Raaaauuughhhh");
         super.growl();
     }
 
     @Override
     public void attack() {
+        //  super.create();
         super.attack();
         growl();
     }
